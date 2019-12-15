@@ -1,0 +1,12 @@
+
+#include "projeto_final.h"
+int main(int argc, char *argv[])
+{  AEROPORTOS *inicio;
+
+
+   if (strcmp (argv[2], "aeroportos")==0)
+    mostra_lista(inicio);
+
+
+    return 0;
+}
