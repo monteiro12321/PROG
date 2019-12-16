@@ -4,57 +4,9 @@ int main(int argc, char *argv[])
 {  AEROPORTOS *inicio;
   char ch;
    
-   printf("Bem-vindo a nossa agencia de viagens.\n"); 
-   printf("Das seguintes opcoes, escolha aquela que lhe mais interessa:\n\t
-   1:Visualização da informação dos aeroportos\n\t
-   2:Visualização da informação dos voos directos\n\t
-   3:Pedido de uma rota directa entre um aeroporto A (LISBON) e um aeroporto B (ROME),ligação directa (-L 0)\n\t
-   4:Idêntico ao ponto anterior mas a listagem é ordenada por hora de partida crescente (-TC)ou decrescente (-TD)\n\t
-   5:Pedido de uma rota com uma ligação (mas sem a preocupação de ligação horária)\n\t
-   6:Pedido de uma rota com uma ligação (com preocupação de ligação horária)\n\t
-   7.Pedido de uma rota com ligação (com preocupação de ligação horária) e com a menor distância\n\t ")
-   printf("Opcao: ");
-   ch= getchar();
-   
-   if(ch=1)
-   {
-   
-   }
-   
-   if(ch=2)
-   {
-   
-   }
-   
-   if(ch=3)
-   {
-   
-   }
-   
-   if(ch=4)
-   {
-   
-   }
-   
-   if(ch=5)
-   {
-   
-   }
-   
-   
-   if(ch=6)
-   {
-   
-   }
-
-   if(ch=7)
-   {
-   
-   }
-
-   if (strcmp (argv[2], "aeroportos")==0)
-    mostra_lista(inicio);
-
-
-    return 0;
+   if (strcmp (argv[1], "aeroportos")==0)
+    {mostra_lista(inicio);
+    }
+    
+    
 }
