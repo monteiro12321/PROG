@@ -10,6 +10,7 @@ float retorna_distancia( )
   int graus_lat_b, minutos_lat_b, segundos_lat_b, eixo_lat_b, graus_lon_b, minutos_lon_b, segundos_lon_b, eixo_lon_b;
   float xa, ya, za, xb, yb, zb;
   float angulo_graus, angulo_rad, produto_interno ;
+  char linha[100];
   
   /* No painel deve aparecer os graus minutos segundos eixo (latitude) graus minutos segundos eixo (longitude) ex: 38 46 52 N 9 8 9 W 
   VAI TER QUE LER OS VALORES PRIMEIRO*/
@@ -52,9 +53,9 @@ float retorna_distancia( )
   /*Transformacao em radianos*/
   angulo_rad= (angulo_graus * 3.14) / 180;
   
-  /*FALTA A ALINEA 5*/
+  distancia= angulo_rad * 6381;
     
-  return distancia;
+  return distancia; /*Distancia em km */
 }
 
 
