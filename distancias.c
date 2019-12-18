@@ -12,6 +12,22 @@ float retorna_distancia( )
   float angulo_graus, angulo_rad, produto_interno ;
   char linha[100];
   
+  FILE *fp;
+  fp= fopen ("exemplo.txt", "r");
+  if(fp==NULL)
+  {
+    printf("Erro na abertura do ficheiro."
+    return 0;
+  }
+           
+
+    fgets(linha, 100, fp);
+    sscanf(linha, "%d %d %d %c %d %d %d %c", graus_lat_a, minutos_lat_a, segundos_lat_a, eixo_lat_a, graus_lon_a, minutos_lon_a, segundos_lon_a, eixo_lon_a);
+    linha[0]='\0';
+           
+    fgets(linha, 100, fp);
+    sscanf(linha, "%d %d %d %c %d %d %d %c", graus_lat_b, minutos_lat_b, segundos_lat_b, eixo_lat_b, graus_lon_b, minutos_lon_b, segundos_lon_b, eixo_lon_b);
+    
   /* No painel deve aparecer os graus minutos segundos eixo (latitude) graus minutos segundos eixo (longitude) ex: 38 46 52 N 9 8 9 W 
   VAI TER QUE LER OS VALORES PRIMEIRO*/
   
